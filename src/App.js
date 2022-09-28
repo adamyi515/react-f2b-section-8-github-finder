@@ -1,8 +1,20 @@
+import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
+
+// Components
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+
+
 function App() {
   return (
-    <div >
-      <h1></h1>
-    </div>
+    <Router>
+      <div className='flex flex-col justify-between h-screen'>
+        <Navbar />
+        <main className='container mx-auto px-3 pb-12'>Content</main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
